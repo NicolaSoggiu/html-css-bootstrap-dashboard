@@ -1,5 +1,30 @@
+/* NAVBAR    */
+
 .navbar img {
     width: 50px;
 }
 
+.logo-lg img {
+    width: 150px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0;
+    padding-top: 88px;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar-down {
+    align-self: center;
+}
 
