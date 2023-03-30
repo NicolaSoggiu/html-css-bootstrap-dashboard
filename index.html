@@ -23,7 +23,10 @@
   <body>
     <div class="cont-nav-bar">
       <nav class="navbar fixed-top flex-nowrap bg-body-tertiary">
-        <img class="" src="img/logo.svg" alt="" />
+        <img class="d-lg-none" src="img/mobile-logo.png" alt="" />
+        <div class="img d-none d-lg-block">
+          <img src="img/logo.svg" alt="" />
+        </div>
         <div class="input-group p-2">
           <input
             type="text "
@@ -33,9 +36,13 @@
             aria-describedby="basic-addon1"
           />
           <div class="text-center p-3">
-            <i class="fa-solid fa-list-ul ml-2"></i>
-            <i class="fa-regular fa-circle-question ml-2"></i>
-            <i class="fa-solid fa-ellipsis-vertical m-2"></i>
+            <i class="fa-solid fa-list-ul ml-2 d-none d-lg-inline-block"></i>
+            <i
+              class="fa-regular fa-circle-question ml-2 d-none d-lg-inline-block"
+            ></i>
+            <i
+              class="fa-solid fa-ellipsis-vertical m-2 d-none d-lg-inline-block"
+            ></i>
             <i class="fa-solid fa-bell" style="color: #ff8f00"></i>
           </div>
         </div>
