@@ -28,3 +28,7 @@ li {
     align-self: center;
 }
 
+.blue-row {
+    padding-top: 88px;
+    background-color: blue;
+}
