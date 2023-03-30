@@ -42,3 +42,22 @@ li {
         width: calc(100% - 63px);
     }
 }
+
+/* NEXT CLASSES */
+
+.table-next-classes {
+    margin-top: 350px;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 120px);
+}
+
+@media screen and (max-width:991px) {
+    .table-next-classes {
+        width: calc(100% - 60px);
+    }
+}
+
+.bi {
+    width: 20px;
+}
