@@ -1,0 +1,44 @@
+navbar e sidebar da fissare;
+
+
+NAVBAR
+navbar non da prendere interamente da bootstrap, usare flex e prendere la barra di ricerca da bootstrap, con anche il menu dropdpwn. elementi che spariscono con display none;
+la barra di ricerca si trova su floating groups (input groups), togliere i bordi e cambiare lo sfondo
+
+
+SIDEBAR
+a lato come spotify quando è piccolo spariscono le scritte con un elemento che va messo alla fine, giusto un effetto di hover da aggiundere agli elementi;
+si può fare altezza 100vh con la barra sopra che gli fa sopra tramite z-index oppure calcolare l'altezza;
+da creare una media query per i breakpoints;
+dare col-auto e col alla parte centrale; cosi si ridimensionano,(oppure in alternativa creare una mediaquery);
+
+
+BOTTONE+
+per il bottone + si trova già fatto su bootstrap; sulla sezione Offcanvas (placement, e mettere il contenuto, cioè un form, al posto dei puntini, il titolo va nel offcanvas header);
+quando andiamo con lo schermo mobile andrà a riempire;
+
+
+DROPDOWN
+i dropdown fare con copia e incolla da bootstrap togiendo quello che non ci serve; (dropdown toggle fa apparire la freccietta del menu) (data-bs toggle è fondamentale pe far funzionare il bottone)
+
+
+CENTRALE
+nella parte centrale abbiamo 3 sezione che a una certa si mettono una sotto l'altra, cambiando anche l'ordire quindi bisogna usare la proprietà di flex(order);
+una prima sezione superiore dove introdurre da bootstrap i Badge;
+sotto abbiamo una mega row che contiene due col, la seconda inizia al "TOdo" più o meno 8 e 4 le larghezze delle col;
+lo stile delle card (sono 4, due a sinistra e due a destra) è già fatto su bootstrap (header and footer, nella card header vanno messi i titoli) le due card vanno messe nella stessa col di sinistra grande, al suo interno un content con dentro le due card che sono dei div normali;
+
+
+PRIMA CARD
+la prima card ha una tabella che troviamo già pronta nei contents (tables); la tabella va messa nel card-body; l'effetto di hover si può prendere da un altra tabella sempre presente in bootstrap (hoverable rows),
+quindi copiare l'altra tabella e aggiungere la classe "table-hover"
+
+SECONDA CARD
+effetto del faq che si trova in components (accordion, accordion flush);
+
+TERZA CARD
+copiare dalla sezione list group dove troviamo già la lista con i checkbox già fatti
+
+QUARTA CARD
+card kiktchen siink;( dentro però ad un altra card perchè abbiamo un doppio bordo)
+
