@@ -14,7 +14,6 @@
     height: 100vh;
     position: fixed;
     left: 0;
-    top:0;
     padding-top: 88px;
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
@@ -28,7 +27,18 @@ li {
     align-self: center;
 }
 
-.blue-row {
+/* CENTRAL */
+
+.central {
     padding-top: 88px;
-    background-color: blue;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 120px);
+    background-color: #1B72E8;
+}
+
+@media screen and (max-width:991px) {
+    .central {
+        width: calc(100% - 63px);
+    }
 }
