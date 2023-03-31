@@ -5,9 +5,9 @@
 }
 
 
-/* ASIDE */
+/* SIDEBAR */
 
-.aside {
+.sidebar {
     width: 70px;
     height: calc(100vh - 88px);
     background-color: #12293E;
@@ -15,19 +15,19 @@
 }
 
 @media (min-width:768px) {
-    .aside {
+    .sidebar {
         width: 150px;
     }
 }
 
-.aside i {
+.sidebar i {
     width: 20px;
 }
 
-/* ASIDE HOVER */
+/* SIDEBAR HOVER */
 
 @media screen and (min-width: 768px) {
-    .aside .icon-nav:hover {
+    .sidebar .icon-nav:hover {
         background-color: grey;
     }
 }
