@@ -51,3 +51,13 @@
 .badge {
     background-color: #165BBA!important;
 }
+
+/* NEXT CLASSES */
+
+.next_classes .table th img{
+    height: 40px;
+}
+
+.next_classes, .card_faq {
+    margin-right: 2rem;
+}
