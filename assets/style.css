@@ -9,7 +9,7 @@
 
 .aside {
     width: 70px;
-    height: calc(100vh - 88px) ;
+    height: calc(100vh - 88px);
     background-color: #12293E;
     background-image: url(/img/sidebar-bg.png) ;
 }
