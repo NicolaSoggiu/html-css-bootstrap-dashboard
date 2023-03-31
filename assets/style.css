@@ -3,3 +3,31 @@
 .navbar .mobile-logo {
     width: 50px;
 }
+
+
+/* ASIDE */
+
+.aside {
+    width: 70px;
+    height: calc(100vh - 88px) ;
+    background-color: #12293E;
+    background-image: url(/img/sidebar-bg.png) ;
+}
+
+@media (min-width:768px) {
+    .aside {
+        width: 150px;
+    }
+}
+
+.aside i {
+    width: 20px;
+}
+
+/* ASIDE HOVER */
+
+@media screen and (min-width: 768px) {
+    .aside .icon-nav:hover {
+        background-color: grey;
+    }
+}
