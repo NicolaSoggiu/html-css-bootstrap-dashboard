@@ -14,12 +14,6 @@
     background-image: url(/img/sidebar-bg.png) ;
 }
 
-@media (min-width:768px) {
-    .sidebar {
-        width: 150px;
-    }
-}
-
 .sidebar i {
     width: 20px;
 }
@@ -32,12 +26,6 @@
     overflow-x: hidden;
 }
 
-@media screen and (min-width:768px) {
-    .container_main {
-        padding-left: 150px;
-    }
-}
-
 /* BLUE NAV  */
 
 .badge {
@@ -46,14 +34,8 @@
 
 /* OFFCANVAS */
  
-@media screen and (min-width:991px) {
-    .offcanvas {
-        width: 60% !important;
-    }
-}
-
 .email_button {
-    margin-top: 3.8rem;
+    margin-top: 1.5rem;
 }
 
 /* NEXT CLASSES */
@@ -68,12 +50,6 @@
 
 /* HOVER */
 
-@media screen and (min-width: 768px) {
-    .sidebar .icon-nav:hover {
-        background-color: grey;
-    }
-}
-
 .badge:hover {
     cursor: pointer;
     background-color: rgb(14, 62, 129) !important;
@@ -81,4 +57,36 @@
 
 .icon-td:hover {
     background-color: rgb(170, 170, 170);
+}
+
+/* MEDIA QUERY */
+
+/* SIDEBAR */
+
+@media (min-width:768px) {
+    .sidebar {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar .icon-nav:hover {
+        background-color: grey;
+    }
+}
+
+/* CONTAINER MAIN */
+
+@media screen and (min-width:768px) {
+    .container_main {
+        padding-left: 150px;
+    }
+}
+
+/* OFFCANVAS */
+
+@media screen and (min-width:991px) {
+    .offcanvas {
+        width: 60% !important;
+    }
 }
