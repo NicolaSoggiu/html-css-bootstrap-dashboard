@@ -21,234 +21,53 @@
     <title>Bootstrap dashboard</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar fixed-top flex-nowrap bg-body-tertiary">
-        <img class="d-lg-none" src="img/mobile-logo.png" alt="" />
-        <div class="logo-lg img d-none d-lg-block">
-          <img src="img/logo.svg" alt="" />
-        </div>
-        <div class="input-group p-2">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Prova a cercare: Lezioni di Lavarel"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-          <div class="text-center p-3">
-            <i class="fa-solid fa-list-ul ml-2 d-none d-lg-inline-block"></i>
-            <i
-              class="fa-regular fa-circle-question ml-2 d-none d-lg-inline-block"
-            ></i>
-            <i
-              class="fa-solid fa-ellipsis-vertical m-2 d-none d-lg-inline-block"
-            ></i>
-            <i class="fa-solid fa-bell" style="color: #ff8f00"></i>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav class="navbar fixed-top z-3 flex-nowrap bg-body-tertiary">
+      <img src="img/mobile-logo.png" alt="" class="mobile-logo d-md-none" />
+      <img src="/img/mobile-logo.png" class="logo_small d-md-none" alt="" />
+      <img class="logo_big d-none d-md-block" src="img/logo.svg" alt="" />
+      <div class="input-group p-2">
+        <input
+          type="text "
+          class="form-control"
+          placeholder="&#128269; Prova a cercare: Lezioni di Lavarel"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
 
-    <div class="sidebar position-fixed col-auto d-flex flex-column px-3">
-      <div class="sidebar-top pt-lg-2">
-        <aside>
-          <ul class="ps-1 pe-2">
-            <li class="text-light py-2">
-              <a href="" class="text-light">
-                <i class="fa-solid fa-house"></i
-                ><span class="d-none d-lg-inline-block ps-lg-2">Home</span>
-              </a>
-            </li>
-            <li class="text-light py-2">
-              <a href="" class="text-light">
-                <i class="fa-solid fa-chart-simple"></i
-                ><span class="d-none d-lg-inline-block ps-lg-2">Stats</span>
-              </a>
-            </li>
-            <li class="text-light py-2">
-              <a href="" class="text-light">
-                <i class="fa-solid fa-signal"></i
-                ><span class="d-none d-lg-inline-block ps-lg-2">Signals</span>
-              </a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-      <div class="sidebar-down text-light position-fixed bottom-0 pe-2 pb-4">
-        <a href="" class="text-light">
-          <i class="fa-solid fa-gear"></i
-          ><span class="d-none d-lg-inline-block ps-lg-2">Admin</span>
-        </a>
-      </div>
-    </div>
+        <div class="text-center p-3 d-flex align-items-center">
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-solid fa-list-ul mx-2 d-none d-md-block"></i
+          ></a>
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-regular fa-circle-question mx-2 d-none d-md-block"></i
+          ></a>
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-solid fa-ellipsis-vertical mx-2 d-none d-md-block"></i
+          ></a>
 
-    <section class="central blue-row text-white py-4 ps-3">
-      <div class="row">
-        <div
-          class="col-12 col-md-4 nuovo-studente order-md-3 pb-4 text-lg-center pe-lg-5"
-        >
-          <span>nuovo studente</span>
-          <button
-            class="btn btn-primary border"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="bi bi-plus-lg"></i>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                Offcanvas right
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">...</div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <h1 class="d-inline-block">Boolean</h1>
-          <span class="badge text-bg-primary">Primary</span>
-          <div class="primary">
-            <span class="badge text-bg-primary d-inline-block">Primary</span>
-            <span class="badge text-bg-primary">Primary</span>
-            <span class="badge text-bg-primary d-none d-lg-inline-block"
-              >Primary</span
+          <div class="dropdown dropstart">
+            <a
+              class=""
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-            <span class="badge text-bg-primary d-none d-lg-inline-block"
-              >Primary</span
-            >
+              <i
+                class="fa-solid fa-bell dropdown mx-2"
+                style="color: #ff8f00"
+              ></i>
+            </a>
+
+            <ul class="dropdown-menu mt-4">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-12 col-md-4 pt-3 pt-md-0">
-          <span>Studenti online negli utlimi 30 minuti</span>
-          <h3 class="pt-2">125</h3>
-        </div>
       </div>
-    </section>
-    <section>
-      <div class="row">
-        <div class="col-12 table-next-classes">
-          <table class="table m-2">
-            <thead>
-              <tr>
-                <th scope="col">Prossime classi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Nome</th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>Stato</td>
-                <td class="text-center">Azioni</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 75
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>done</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 76
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>done</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 77
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>process</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 78
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>done</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 79
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>failed</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 80
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>done</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 81
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>failed</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <i class="bi bi-code-slash d-inline-block"></i>Classe 82
-                </th>
-                <td class="d-none d-md-inline-block">Data Inizio</td>
-                <td class="d-none d-md-inline-block">Roi</td>
-                <td>done</td>
-                <td class="text-center">
-                  <i class="bi bi-pen"></i><i class="bi bi-trash"></i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    <section></section>
+    </nav>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
