@@ -162,15 +162,19 @@
                         />
                       </div>
 
-                      <div class="col-md-6 text-start">
-                        <label for="inputEmail4" class="form-label"
-                          >Email</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="inputEmailb4"
-                        />
+                      <div class="col-md-6 text-start email_button">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            >@</span
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Username"
+                            aria-label="Username"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
                       </div>
 
                       <div class="col-md-6 text-start">
@@ -213,7 +217,7 @@
                         </select>
                       </div>
 
-                      <div class="col-md-2 text-center">
+                      <div class="col-md-2 text-start">
                         <label for="inputZip" class="form-label">CAP</label>
                         <input type="text" class="form-control" id="inputZip" />
                       </div>
@@ -230,10 +234,15 @@
                           />
                         </div>
                       </div>
-
-                      <div class="col-12">
+                      <div class="col-12 text-start">
+                        <input type="checkbox" /> Seleziona per proseguire
+                      </div>
+                      <div class="col-12 d-flex">
                         <button type="submit" class="btn btn-primary">
-                          Sign in
+                          Salva
+                        </button>
+                        <button type="button" class="btn btn-warning ms-1">
+                          Svuota
                         </button>
                       </div>
                     </form>
