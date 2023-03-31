@@ -44,9 +44,22 @@
     background-color: #165BBA!important;
 }
 
+/* OFFCANVAS */
+
+.offcanvas {
+    width: 60% !important;
+}
+ 
+/* CAPIRE PERCHE NON FUNZIONA IL RESPONSIVE */
+@media screen and (max-width:991) {
+    .offcanvas {
+        width: 100%;
+    }
+}
+
 /* NEXT CLASSES */
 
-.next_classes .table th img{
+.next_classes .table th img {
     height: 40px;
 }
 
@@ -62,11 +75,11 @@
     }
 }
 
-.badge:hover{
+.badge:hover {
     cursor: pointer;
     background-color: rgb(14, 62, 129) !important;
 }
 
-.icon-td:hover{
+.icon-td:hover {
     background-color: rgb(170, 170, 170);
 }
