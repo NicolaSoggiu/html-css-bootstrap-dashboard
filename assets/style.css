@@ -24,14 +24,6 @@
     width: 20px;
 }
 
-/* SIDEBAR HOVER */
-
-@media screen and (min-width: 768px) {
-    .sidebar .icon-nav:hover {
-        background-color: grey;
-    }
-}
-
 /* MAIN */
 
 .container_main {
@@ -60,4 +52,21 @@
 
 .next_classes, .card_faq {
     margin-right: 2rem;
+}
+
+/* HOVER */
+
+@media screen and (min-width: 768px) {
+    .sidebar .icon-nav:hover {
+        background-color: grey;
+    }
+}
+
+.badge:hover{
+    cursor: pointer;
+    background-color: rgb(14, 62, 129) !important;
+}
+
+.icon-td:hover{
+    background-color: rgb(170, 170, 170);
 }
