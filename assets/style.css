@@ -31,3 +31,23 @@
         background-color: grey;
     }
 }
+
+/* MAIN */
+
+.container_main {
+    padding-left :70px;
+    padding-top:88px;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .container_main {
+        padding-left: 150px;
+    }
+}
+
+/* BLUE NAV  */
+
+.badge {
+    background-color: #165BBA!important;
+}
