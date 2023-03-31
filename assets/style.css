@@ -45,15 +45,10 @@
 }
 
 /* OFFCANVAS */
-
-.offcanvas {
-    width: 60% !important;
-}
  
-/* CAPIRE PERCHE NON FUNZIONA IL RESPONSIVE */
-@media screen and (max-width:991) {
+@media screen and (min-width:991px) {
     .offcanvas {
-        width: 100%;
+        width: 60% !important;
     }
 }
 
